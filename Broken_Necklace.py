@@ -67,23 +67,15 @@ for i in fullNecklace:
            
             #things.append(current)
             stage=i
-            current=1
-
-            
+            current=1 
 
             whiteshift()
                    
-                               
-            
-               
-
             if white != 0:
                 #things.append(str(white))
                 whitechange()
                 white=0
            
-            
-
             if Cwhites[0]+Cwhites[1]+Cwhites[2]+CCvalue[0]+CCvalue[1]> BiggestValue:
                 BiggestValue = Cwhites[0]+Cwhites[1]+Cwhites[2]+CCvalue[0]+CCvalue[1]
                 
@@ -99,7 +91,9 @@ if Cwhites[0]+Cwhites[1]+Cwhites[2]+CCvalue[0]+CCvalue[1]> BiggestValue:
     BiggestValue = Cwhites[0]+Cwhites[1]+Cwhites[2]+CCvalue[0]+CCvalue[1]
     
 
-fout.write(str(BiggestValue) + "\n")   
+fout.write(str(BiggestValue) + "\n")
+fin.close()
+fout.close()   
     
 
 
